@@ -1,0 +1,15 @@
+{
+  "name": "happy-vuex",
+  "version": "1.0.0",
+  "description": "基于Vuex进行封装，给Vuex赋予更愉快的使用体验",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "lodash-es": "^4.17.20"
+  }
+}
