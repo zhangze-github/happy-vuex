@@ -1,10 +1,30 @@
-> npm install happy-vuex --save
-
 对Vuex进行简单的封装，提供更友好全局状态管理。
+
+```shell
+npm install happy-vuex --save
+```
 
 ## 使用方法
 
-#### 独立Vuex状态的写法如下
+#### 组件内使用
+
+```js
+// 更新 a 为 2
+this.setData(['a', 2])
+// 讲该模块数据整体更新
+this.setData(['', {a: 2, b: 2}])
+// 还原该模块下整体数据
+this.init();
+```
+
+#### action内使用
+
+```js
+// 更新 a 为 2，其他同上
+commit("setData", ["a", 2]);
+```
+
+#### Vuex模块内的写法
 
 ```js
 
@@ -26,7 +46,7 @@ const mutations = {
 };
 export default {
     namespaced: true,
-    state: cloneDeep(initstate), // 深克隆，切断引用值关联
+    state: cloneDeep(initstate), // 深克隆，切断引用关联
     getters,
     actions,
     mutations
@@ -56,7 +76,6 @@ methods: {
 
 // 组件内更新状态，即可调用setData
 this.setData(["a", 2]); // 更新a值为2
-
 ```
 
 

@@ -1,6 +1,6 @@
 {
   "name": "happy-vuex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于Vuex进行封装，给Vuex赋予更愉快的使用体验",
   "main": "index.js",
   "scripts": {
