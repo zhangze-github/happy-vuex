@@ -17,6 +17,7 @@ function mapStateToProps(router, stateArr) {
     });
     return obj;
 }
+
 /**
  * 公共的mutation方法 提供setData与init
  *
