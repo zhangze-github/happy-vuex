@@ -1,4 +1,8 @@
-const {forEach, set, get, assign, cloneDeep} = require('lodash');
+const forEach = require('lodash').forEach;
+const set = require('lodash').set;
+const get = require('lodash').get;
+const assign = require('lodash').assign;
+const cloneDeep = require('lodash').cloneDeep;
 
 /**
  * 映射vuex字段到组件内部
@@ -6,7 +10,7 @@ const {forEach, set, get, assign, cloneDeep} = require('lodash');
  * @param stateArr 需要映射的数组
  * @returns {{}}
  */
-function mapStateToProps(router, stateArr){
+function mapStateToProps(router, stateArr) {
     let obj = {};
     forEach(stateArr, (item) => {
         set(obj, item, (state) => get(state, [router, item], ''));
@@ -19,7 +23,7 @@ function mapStateToProps(router, stateArr){
  * @param initState 初始state 用户初始化
  * @returns {{init(*=): void, setData(*=, [*, *]): void}}
  */
-function commonMutations(initState){
+function commonMutations(initState) {
     return {
         /**
          * 更新state数据 请看源码和页面中使用方法
@@ -28,9 +32,9 @@ function commonMutations(initState){
          * @param data
          */
         setData(state, [route, data]) {
-            if(route.length === 0){
+            if (route.length === 0) {
                 assign(state, data);
-            }else{
+            } else {
                 set(state, route, data);
             }
         },
