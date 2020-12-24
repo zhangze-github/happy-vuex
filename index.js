@@ -27,7 +27,7 @@ function mapStateToProps(router, stateArr) {
 function commonMutations(initState) {
     return {
         /**
-         * 更新state数据 请看源码和页面中使用方法
+         * 更新state数据 
          * @param state
          * @param route 可更新一个数据或多个数据 传空串或空数组 批量更新state数据
          * @param data

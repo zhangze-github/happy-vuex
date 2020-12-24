@@ -70,7 +70,7 @@ computed: {
 methods: {
     ...mapMutations({
         setData: 'home/setData',
-        init: 'home/init'
+        init: 'home/init', // 如不需要init方法可省略
     }),
 }
 
