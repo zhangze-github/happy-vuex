@@ -1,7 +1,7 @@
 {
   "name": "happy-vuex",
-  "version": "1.0.2",
-  "description": "基于Vuex进行封装，给Vuex赋予更愉快的使用体验",
+  "version": "1.0.4",
+  "description": "基于Vuex进行封装，赋予Vuex更愉快的使用体验",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,9 @@
   },
   "keywords": [
     "vue",
-    "vuex"
+    "vuex",
+    "happy",
+    "happy-vuex"
   ],
   "repository": {
     "type": "git",

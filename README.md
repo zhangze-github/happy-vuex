@@ -53,6 +53,16 @@ export default {
 }
 ```
 
+#### 模块化命名
+
+```js
+const store = new Vuex.Store({
+    modules: {
+        home: ,
+    }
+})
+```
+
 #### 组件内注册
 
 ```js
