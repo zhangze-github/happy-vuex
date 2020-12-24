@@ -11,9 +11,9 @@ npm install happy-vuex --save
 ```js
 // 更新 a 为 2
 this.setData(['a', 2])
-// 讲该模块数据整体更新
+// 整体更新该模块下数据
 this.setData(['', {a: 2, b: 2}])
-// 还原该模块下整体数据
+// 整体还原该模块下数据
 this.init();
 ```
 
