@@ -58,7 +58,7 @@ export default {
 ```js
 const store = new Vuex.Store({
     modules: {
-        home: ,
+        home: home,
     }
 })
 ```
